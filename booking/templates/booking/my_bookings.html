@@ -1,0 +1,11 @@
+{% extends 'booking/base.html' %}
+{% block content %}
+<h2>My Bookings</h2>
+<ul>
+    {% for booking in bookings %}
+    <li>{{ booking.flight.flight_number }} - {{ booking.flight.departure_date }} {{ booking.flight.departure_time }}
+        - Seats: {{ booking.seats_booked }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'booking/base.html' %}
+{% block content %}
+<h2>Search Flights</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time">
+    <button type="submit">Search</button>
+</form>
+<ul>
+    {% for flight in flights %}
+    <li>{{ flight.flight_number }} - {{ flight.departure_date }} {{ flight.departure_time }}
+        <a href="{% url 'book_flight' flight.id %}">Book</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
