@@ -81,3 +81,4 @@ Visit `http://127.0.0.1:8000/` in your browser.
 3. View Bookings:
 - View bookings filtered by flight number and time.
 
+<img width="1020" alt="Screenshot 2024-08-10 at 2 26 30 AM" src="https://github.com/user-attachments/assets/09a5fd11-25fe-437a-a5fe-1451ae8f02b5">
